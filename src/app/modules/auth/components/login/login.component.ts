@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { User, UserLoginData } from '../../../core/models/user.model';
 import { AuthService } from '../../../core/services/auth.service';
+import { error } from '@angular/compiler-cli/src/transformers/util';
 
 @Component({
   selector: 'app-login',
@@ -27,6 +28,7 @@ export class LoginComponent {
       },
       error: (err) => {
         this.errorMessage = 'Wystąpił błąd.';
+        console.log(this.errorMessage);
       },
     });
   }

@@ -1,1 +1,31 @@
-<p>register works!</p>
+<div class="register-wrapper mt-3">
+  <h2>Zarejestruj się:</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>E-mail</mat-label>
+        <input matInput placeholder="test@gmail.com" formControlName = "email">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Login</mat-label>
+        <input matInput formControlName="username">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Hasło</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <div class="d-flex justify-content-end">
+      <button mat-raised-button color="primary" type="submit">Zarejestruj się</button>
+    </div>
+    <!--<app-alert *ngIf="errorMessage" [text]="errorMessage"></app-alert>-->
+  </form>
+</div>

@@ -33,13 +33,40 @@
   ],
   "clients": [
     {
-      "id": 1,
-      "firstname": "Test",
+      "firstname": "Testowy1",
       "surname": "Testowy",
       "email": "test@gmail.com",
       "phone": "123456789",
       "address": "Miasto ul. Testowa 12",
+      "postcode": "11-111",
+      "id": 1
+    },
+    {
+      "id": 3,
+      "firstname": "Test3",
+      "surname": "Testowy3",
+      "email": "test3@gmail.com",
+      "phone": "333456789",
+      "address": "Miasto ul. Testowa 3",
       "postcode": "11-111"
+    },
+    {
+      "firstname": "Andrzej",
+      "surname": "Saka",
+      "email": "a@gmail.com",
+      "phone": "123456789",
+      "address": "Warszawa ul. Krakowska",
+      "postcode": "05-008",
+      "id": 4
+    },
+    {
+      "firstname": "",
+      "surname": "Tab",
+      "email": "g@gmail.com",
+      "phone": "123456789",
+      "address": "sadsda",
+      "postcode": "dasdas",
+      "id": 5
     }
   ]
 }
